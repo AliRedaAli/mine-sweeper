@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
+import NewGameForm from './components/forms/NewGameForm';
+import {Container,Col,Row} from 'reactstrap';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header"><h1>mine sweeper</h1></header>
-      </div>
+      <Container>
+        <Row>
+          <Col md={{size:8,offset:2}} sm="12">
+            <header className="App-header"><h1>mine sweeper</h1></header>
+
+            <NewGameForm/>
+
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
