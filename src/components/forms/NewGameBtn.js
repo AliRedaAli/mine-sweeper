@@ -9,7 +9,7 @@ class NewGameBtn extends Component {
     render() { 
         return ( 
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-                <Button>New Game</Button>
+                <Button onClick={this.props.handleNewGame}>New Game</Button>
             </FormGroup>
          );
     }

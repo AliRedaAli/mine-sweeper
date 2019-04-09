@@ -6,7 +6,7 @@ class MinesInput extends Component {
         return (
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 <Label for="SelectSize">Select Size: </Label>
-                <Input type="text" id="mines" name="mines" placeholder="Mines Sount" />
+                <Input type="text" id="mines" name="mines" placeholder="Mines Sount" onChange={this.props.changeMines}/>
             </FormGroup>
         );
     }
